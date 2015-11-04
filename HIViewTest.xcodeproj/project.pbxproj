@@ -30,32 +30,6 @@
 		4F94EEF007B3091200AE9F13 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		4A9504C5FFE6A39111CA0CBA /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "-DDEBUG";
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		4A9504C6FFE6A39111CA0CBA /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXFileReference section */
 		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
@@ -199,7 +173,7 @@
 /* Begin PBXNativeTarget section */
 		4F94EED707B3091200AE9F13 /* HIViewTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F2B04F908A0271B0055E173 /* Build configuration list for PBXNativeTarget "HIViewTest" */;
+			buildConfigurationList = BE651B450C3472A700EC1FC8 /* Build configuration list for PBXNativeTarget "HIViewTest" */;
 			buildPhases = (
 				4F94EED807B3091200AE9F13 /* Headers */,
 				4F94EEE107B3091200AE9F13 /* Resources */,
@@ -209,24 +183,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-HIViewTest.plist";
-				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = HIViewTest;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-			};
 			dependencies = (
 			);
 			name = HIViewTest;
@@ -240,13 +196,7 @@
 /* Begin PBXProject section */
 		20286C28FDCF999611CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 4F2B04FD08A0271B0055E173 /* Build configuration list for PBXProject "HIViewTest" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				4A9504C5FFE6A39111CA0CBA /* Development */,
-				4A9504C6FFE6A39111CA0CBA /* Deployment */,
-			);
+			buildConfigurationList = BE651B490C3472A700EC1FC8 /* Build configuration list for PBXProject "HIViewTest" */;
 			hasScannedForEncodings = 1;
 			mainGroup = 20286C29FDCF999611CA2CEA /* HIViewTest */;
 			projectDirPath = "";
@@ -326,81 +276,128 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4F2B04FA08A0271B0055E173 /* Debug */ = {
+		BE651B460C3472A700EC1FC8 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-HIViewTest.plist";
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-DDEBUG";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = HIViewTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = Debug;
+			name = Development;
 		};
-		4F2B04FB08A0271B0055E173 /* Release */ = {
+		BE651B470C3472A700EC1FC8 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-HIViewTest.plist";
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = HIViewTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		BE651B480C3472A700EC1FC8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-HIViewTest.plist";
+				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HIViewTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
 				WRAPPER_EXTENSION = app;
 			};
-			name = Release;
+			name = Default;
 		};
-		4F2B04FE08A0271B0055E173 /* Debug */ = {
+		BE651B4A0C3472A700EC1FC8 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
-			name = Debug;
+			name = Development;
 		};
-		4F2B04FF08A0271B0055E173 /* Release */ = {
+		BE651B4B0C3472A700EC1FC8 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
-			name = Release;
+			name = Deployment;
+		};
+		BE651B4C0C3472A700EC1FC8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F2B04F908A0271B0055E173 /* Build configuration list for PBXNativeTarget "HIViewTest" */ = {
+		BE651B450C3472A700EC1FC8 /* Build configuration list for PBXNativeTarget "HIViewTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F2B04FA08A0271B0055E173 /* Debug */,
-				4F2B04FB08A0271B0055E173 /* Release */,
+				BE651B460C3472A700EC1FC8 /* Development */,
+				BE651B470C3472A700EC1FC8 /* Deployment */,
+				BE651B480C3472A700EC1FC8 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Default;
 		};
-		4F2B04FD08A0271B0055E173 /* Build configuration list for PBXProject "HIViewTest" */ = {
+		BE651B490C3472A700EC1FC8 /* Build configuration list for PBXProject "HIViewTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F2B04FE08A0271B0055E173 /* Debug */,
-				4F2B04FF08A0271B0055E173 /* Release */,
+				BE651B4A0C3472A700EC1FC8 /* Development */,
+				BE651B4B0C3472A700EC1FC8 /* Deployment */,
+				BE651B4C0C3472A700EC1FC8 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Default;
 		};
 /* End XCConfigurationList section */
 	};
